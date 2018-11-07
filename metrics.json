@@ -1,0 +1,42 @@
+[
+	{
+		"basepath" : "Cisco-IOS-XE-memory-oper:memory-statistics/memory-statistic",
+		"spec" : {
+			"fields" : [
+				{"name":"name", "tag": true},
+				{"name":"total-memory"},
+				{"name":"used-memory"},
+				{"name":"free-memory"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XE-interfaces-oper:interfaces/interface/statistics",
+		"spec" : {
+			"fields" : [
+				{"name":"name", "tag": true},
+				{"name":"rx-pps"},
+				{"name":"tx-pps"}
+			]
+		}
+	},
+	{
+		"basepath" : "ietf-interfaces:interfaces-state/interface/statistics",
+		"spec" : {
+			"fields" : [
+				{"name":"name", "tag": true},
+				{"name":"in-octets"},
+				{"name":"out-octets"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XE-process-cpu-oper:cpu-usage/cpu-utilization",
+		"spec" : {
+			"fields" : [
+				{"name":"name", "tag": true},
+				{"name":"five-seconds"}
+			]
+		}
+	}
+]
